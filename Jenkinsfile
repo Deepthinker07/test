@@ -49,6 +49,11 @@
                     }
                 }
             }
+            stage ( 'run') {
+                steps {
+                    sh "docker run -d -P --name test deepthinker07/singh "
+                }
+            }
             
         }
 
