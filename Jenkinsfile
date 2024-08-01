@@ -6,7 +6,7 @@
         stages {
             stage ("cleanws") {
                 steps {
-                    cleanWs() //
+                    cleanWs() 
 
                 }
             }
