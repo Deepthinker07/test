@@ -42,6 +42,13 @@
                     sh "docker build -t singh ."
                 }
             }
+            stage ("Docker push") {
+                steps {
+                    withDockerRegistry(credentialsId: 'docker') {
+                        sh "docker push singh"
+                    }
+                }
+            }
             
         }
 
