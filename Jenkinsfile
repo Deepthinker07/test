@@ -3,9 +3,9 @@ pipeline{
     tools {
         maven "singh"
     }
-    environment {
-        
-    }
+    // environment {
+
+    // }
     stages {
         stage ("git checkout") {
             steps {
