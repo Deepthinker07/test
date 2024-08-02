@@ -14,6 +14,13 @@ pipeline{
                 sh "mvn compile"
             }
         }
+        stage ("code analysis") {
+                steps {
+                    withSonarQubeEnv('sathish') {
+                    sh 'mvn sonar:sonar'
+              }
+            }
+        }
         stage ("test") {
             steps {
                 sh "mvn test"
