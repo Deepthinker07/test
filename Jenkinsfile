@@ -26,7 +26,7 @@ pipeline{
         }
         stage ("docker build") {
             steps {
-                sh "docker build -t singh ."
+                sh "docker build -t deepthinker07/singh ."
             }
         }
         stage ("docker push") {
