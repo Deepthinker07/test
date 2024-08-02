@@ -29,5 +29,12 @@ pipeline{
                 sh "docker build -t singh ."
             }
         }
+        stage ("docker push") {
+            steps {
+                withDockerRegistry(credentialsId: 'docker') {
+                    sh " docker push singh "
+                }
+            }
+        }
     }
 }
