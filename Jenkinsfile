@@ -32,7 +32,7 @@ pipeline{
         stage ("docker push") {
             steps {
                 withDockerRegistry(credentialsId: 'docker') {
-                    sh " docker push singh "
+                    sh " docker push deepthinker07/singh "
                 }
             }
         }
