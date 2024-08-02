@@ -1,6 +1,5 @@
 FROM openjdk:24-slim-bookworm
-ENV singh /workspace/java
-WORKDIR $singh
+WORKDIR /workspace/java
 COPY target/*.jar .
 EXPOSE 8080
-CMD ["java", "-java" , "java.jar"]
+CMD ["java", "-java" , "sample-0.0.1-SNAPSHOT.jar"]

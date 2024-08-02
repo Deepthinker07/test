@@ -11,7 +11,7 @@
 	<groupId>io.buildpacks.example</groupId>
 	<artifactId>sample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>singh</name>
+	<name>sample</name>
 	<description>Sample Java Application</description>
 
 	<properties>
