@@ -16,7 +16,7 @@ pipeline{
         }
         stage ("code analysis") {
                 steps {
-                    withSonarQubeEnv('sathish') {
+                    withSonarQubeEnv('singh') {
                     sh 'mvn sonar:sonar'
               }
             }
