@@ -46,7 +46,7 @@ pipeline{
                 sh "docker build -t deepthinker07/singh ."
             }
         }
-        stage ("docker push") {
+        stage ("docker img push") {
             steps {
                 withDockerRegistry(credentialsId: 'docker') {
                     sh " docker push deepthinker07/singh "
