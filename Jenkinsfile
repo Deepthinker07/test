@@ -17,7 +17,7 @@ pipeline{
                 sh "mvn compile"
             }
         }
-        stage ("code analysi") {
+        stage ("code analysis") {
                 steps {
                     withSonarQubeEnv('singh') {
                     sh 'mvn sonar:sonar'
