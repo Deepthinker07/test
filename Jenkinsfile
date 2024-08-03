@@ -11,7 +11,7 @@ pipeline{
     stages {
         stage ("cleaws") {
             steps {
-                sh "mvn cleanWs"
+                cleanWs()
             }
         }
         stage ("git checkout1") {
