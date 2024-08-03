@@ -9,6 +9,11 @@ pipeline{
 
     // }
     stages {
+        stage ("cleaws") {
+            steps {
+                sh "mvn cleanWs"
+            }
+        }
         stage ("git checkout1") {
             steps {
                 git branch: 'main', url: 'https://github.com/Deepthinker07/java.git'
