@@ -7,7 +7,7 @@ pipeline{
 
     // }
     stages {
-        stage ("git checkout") {
+        stage ("git checkout1") {
             steps {
                 git branch: 'main', url: 'https://github.com/Deepthinker07/java.git'
             }
